@@ -8,7 +8,8 @@
 #include <netdb.h>
 
 void error(const char *msg){
-
+  
+  perror("Error");
   fprintf(stderr,"ERROR: %s\n", msg);
   exit(1);
 }
