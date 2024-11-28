@@ -30,6 +30,8 @@ int main(int argc, char *argv[]){
   struct hostent *server;
   socklen_t clilen;
 
+  portnumber = atoi(argv[2]);
+
   sockfd = socket(AF_INET, SOCK_STREAM, 0);
   if(sockfd < 0){
     error("Could not open a socket.");
